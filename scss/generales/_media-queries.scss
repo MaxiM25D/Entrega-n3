@@ -1,0 +1,76 @@
+  /* ---- Media Queries ---- */
+  /* Media Query para pantallas grandes (1024px o más) */
+  @media (min-width: 1024px) {
+    body {
+        background: #F7A8C4;
+    }
+  
+    /* Navbar y otros elementos */
+    .navbar-brand {
+        font-size: 50px;
+    }
+    .figure-caption {
+        font-size: 16px;
+    }
+  
+    /* Grilla de imágenes */
+    .figure1 {
+        width: 30%;
+        margin: 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
+  }
+  
+  /* Media Query para pantallas medianas (768px a 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    
+    body {
+      background: #F7A8C4;
+    }
+  
+    /* Ajustes para imágenes y subtítulos */
+    .figure1 {
+        width: 45%;
+        margin: 10px 0;
+    }
+    .subtitulo-idx, .subtitulo-cat, .subtitulo-cc, .subtitulo-r, .subtitulo-ctc {
+        font-size: 24px;
+    }
+  
+    /* Ajustar navbar y otros textos */
+    .navbar-brand {
+        font-size: 40px;
+    }
+  }
+  
+  /* Media Query para pantallas pequeñas (menos de 768px) */
+  @media (max-width: 767px) {
+    
+    body {
+      background: #F7A8C4;
+    }
+  
+    /* Estilos de subtítulos y otras secciones */
+    .subtitulo-idx, .subtitulo-cat, .subtitulo-cc, .subtitulo-r, .subtitulo-ctc {
+        font-size: 22px;
+        flex-direction: column;
+        padding: 8px;
+    }
+  
+    /*grilla de imágenes */
+    .figure1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+  
+    /* Ajustar los tamaños de fuentes para mejorar en pantallas pequeñas */
+    .navbar-brand {
+        font-size: 30px;
+    }
+  
+    .figure-caption {
+        font-size: 14px;
+    }
+  }
+  
