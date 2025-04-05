@@ -1,0 +1,17 @@
+@use'../generales/variables'as*;
+
+/* Estilos para subtítulos en diversas secciones */
+%subtitulos {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  background: $bg-3;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  line-height: auto;
+  text-align: center;
+  font-size: $fs-sub;
+  font-weight: 1000;
+  color: rgb(0, 0, 0);
+}

@@ -1,3 +1,9 @@
+@use'../generales/variables'as*;
+@use'../utilidades/extends'as*;
+
+.subtitulo-r {
+  @extend %subtitulos;
+}
 /* Formulario de registro */
 .list-style {
     display: block;
@@ -7,12 +13,12 @@
     border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
-    background: #EC7FA9;
+    background: $bg-4;
     color: rgb(0, 0, 0);
   }
   .list-style input {
-    background: #F7A8C4;
+    background: $bg-1;
   }
   .list-style select {
-    background: #F7A8C4;
+    background: $bg-1;
   }

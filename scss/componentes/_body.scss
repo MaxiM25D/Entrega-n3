@@ -1,4 +1,6 @@
-  /* Estilo general*/
-  body {
-    background: #F7A8C4;
-  }
+@use '../generales/variables'as*;
+  
+/* Estilo general*/
+body {
+  background: $bg-1;
+}

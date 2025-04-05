@@ -1,13 +1,23 @@
- /* Footer */
- .piedepagina {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color: #E53888;
-    img {
-      height: 165px;
-      float: right;
-    }
+@use '../generales/variables'as*;
+
+/* Footer */
+.piedepagina {
+  background-color: $bg-2;
+  padding: 28px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-top: 2px solid #ccc;
+  .footer-logo {
+    max-width: 100px;
+    margin-bottom: 15px;
   }
+  a {
+    color: #333;
+    text-decoration: none;
+  &:hover {
+    color: #ffffff;
+  }
+  }
+}
+

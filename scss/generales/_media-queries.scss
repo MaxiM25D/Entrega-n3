@@ -1,8 +1,10 @@
-  /* ---- Media Queries ---- */
+@use'../generales/variables'as*;
+
+ /* ---- Media Queries ---- */
   /* Media Query para pantallas grandes (1024px o más) */
   @media (min-width: 1024px) {
     body {
-        background: #F7A8C4;
+        background: $bg-1;
     }
   
     /* Navbar y otros elementos */
@@ -26,7 +28,7 @@
   @media (min-width: 768px) and (max-width: 1023px) {
     
     body {
-      background: #F7A8C4;
+      background: $bg-1;
     }
   
     /* Ajustes para imágenes y subtítulos */
@@ -48,7 +50,7 @@
   @media (max-width: 767px) {
     
     body {
-      background: #F7A8C4;
+      background: $bg-1;
     }
   
     /* Estilos de subtítulos y otras secciones */

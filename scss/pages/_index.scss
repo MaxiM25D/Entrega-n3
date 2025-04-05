@@ -1,0 +1,6 @@
+@use'../generales/variables'as*;
+@use'../utilidades/extends'as*;
+
+.subtitulo-idx {
+    @extend %subtitulos;
+}

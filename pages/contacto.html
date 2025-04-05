@@ -9,7 +9,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/Entrega-N2/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Entrega-N3/assets/css/style.css" />
     <title>Contacto - SM GLAMOUR</title>
   </head>
   <body>
@@ -18,12 +23,12 @@
         <nav class="navbar">
           <div class="container-fluid">
             <div class="d-flex align-items-center">
-              <a class="navbar-brand" href="/Entrega-N2/index.html">
+              <a class="navbar-brand" href="/Entrega-N3/index.html">
                 SM GLAMOUR
               </a>
               <img
                 class="logo1 ms-3"
-                src="/Entrega-N2/assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
+                src="/Entrega-N3/assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
                 alt="logo1"
                 width="70px"
               />
@@ -60,12 +65,12 @@
                     <a
                       class="nav-link"
                       aria-current="page"
-                      href="/Entrega-N2/index.html"
+                      href="/Entrega-N3/index.html"
                       >Inicio</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Entrega-N2/pages/catalogo.html"
+                    <a class="nav-link" href="/Entrega-N3/pages/catalogo.html"
                       >Catalogo</a
                     >
                   </li>
@@ -73,7 +78,7 @@
                     <a
                       class="nav-link"
                       aria-current="page"
-                      href="/Entrega-N2/pages/como-comprar.html"
+                      href="/Entrega-N3/pages/como-comprar.html"
                       >Como Comprar</a
                     >
                   </li>
@@ -81,7 +86,7 @@
                     <a
                       class="nav-link"
                       aria-current="page"
-                      href="/Entrega-N2/pages/registrate.html"
+                      href="/Entrega-N3/pages/registrate.html"
                       >Registrate</a
                     >
                   </li>
@@ -89,7 +94,7 @@
                     <a
                       class="nav-link"
                       aria-current="page"
-                      href="/Entrega-N2/pages/contacto.html"
+                      href="/Entrega-N3/pages/contacto.html"
                       >Contacto</a
                     >
                   </li>
@@ -125,16 +130,33 @@
     </main>
     <!--Pie de pagina-->
     <footer>
-      <section class="piedepagina">
+      <section
+        class="piedepagina animate__animated animate__fadeInUp"
+        data-aos="fade-up"
+      >
         <img
-          src="/Entrega-N2/assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
-          alt=""
+          src="/Entrega-N3/assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
+          alt="Logo"
+          class="footer-logo"
+          data-aos="zoom-in"
         />
-        <h3>Informacion sobre el sitio web:</h3>
-        <p>Copyright * 2025</p>
-        <p>Mail de soporte: maximorandi19@gmail.com</p>
-        <p>Horario de atencion: Lunes a Viernes de 10 a 18hs</p>
-        <p>WhatsApp: +5493827655994</p>
+        <h3 data-aos="fade-right">Información sobre el sitio web:</h3>
+        <p data-aos="fade-left">
+          📧
+          <a href="mailto:maximorandi19@gmail.com">GMAIL</a>
+        </p>
+        <p data-aos="fade-left">
+          📱
+          <a href="https://wa.me/5493827655994" target="_blank">WhatsApp</a>
+        </p>
+        <p data-aos="fade-left">
+          📞
+          <a href="tel:+5493827655994">LLAMAR</a>
+        </p>
+        <p data-aos="fade-right">
+          🕒 Horario de atención: Lunes a Viernes de 10 a 18hs
+        </p>
+        <p data-aos="zoom-in">&copy; 2025 - Todos los derechos reservados</p>
       </section>
     </footer>
 
@@ -143,5 +165,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

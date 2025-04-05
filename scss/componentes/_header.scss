@@ -1,6 +1,8 @@
+@use'../generales/variables'as*;
+
 /*HEADER*/
 .navbar {
-    background-color: #E53888; 
+    background-color: $bg-2; 
   }
   .navbar-brand {
     display: flex;
@@ -10,10 +12,10 @@
     color: rgb(0, 0, 0); 
   }
   .offcanvas-body {
-    background-color: #E53888;
+    background-color: $bg-2; 
   }
   .offcanvas-header {
-    background-color: #E53888;
+    background-color: $bg-2; 
   }
   .offcanvas-title:hover {
     color: rgb(255, 254, 254);

@@ -1,3 +1,9 @@
+@use'../generales/variables'as*;
+@use'../utilidades/extends'as*;
+.subtitulo-cc {
+  @extend %subtitulos;
+}
+
 /* Lista personalizada */
 .lista1 .list-group-numbered {
     list-style-type: square; 
@@ -10,7 +16,7 @@
     font-size: 20px; 
   }
   .lista1 .list-group-item:hover {
-    background-color: #E53888;
+    background-color: $bg-2;
     color: white;
   }
   

@@ -1,14 +1,14 @@
-@use 'generales/generales';
-@use 'componentes/body';
-@use 'componentes/header';
-@use 'generales/subtitulos';
-@use 'generales/imagenes';
-@use 'pages/como-comprar';
-@use 'pages/registro';
-@use 'pages/contacto';
-@use 'componentes/footer';
-@use 'generales/media-queries';
-
+@use '../scss/generales/generales'as*;
+@use '../scss/componentes/body'as*;
+@use '../scss/componentes/header'as*;
+@use '../scss/generales/imagenes'as*;
+@use '../scss/pages/index'as*;
+@use '../scss/pages/catalogo'as*;
+@use '../scss/pages/como-comprar'as*;
+@use '../scss/pages/registro'as*;
+@use '../scss/pages/contacto'as*;
+@use '../scss/componentes/footer'as*;
+@use '../scss/generales/media-queries'as*;
 
   
 
