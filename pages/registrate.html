@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/Entrega-N3/assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>Registrate - SM GLAMOUR</title>
   </head>
   <body>
@@ -23,16 +23,12 @@
         <nav class="navbar">
           <div class="container-fluid">
             <div class="d-flex align-items-center">
-              <a
-                class="navbar-brand"
-                data-aos="flip-up"
-                href="/Entrega-N3/index.html"
-              >
+              <a class="navbar-brand" data-aos="flip-up" href="../index.html">
                 SM GLAMOUR
               </a>
               <img
                 class="logo1 ms-3"
-                src="/Entrega-N3/assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
+                src="../assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
                 alt="logo1"
                 width="70px"
                 data-aos="flip-up"
@@ -67,41 +63,23 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="/Entrega-N3/index.html"
+                    <a class="nav-link" aria-current="page" href="../index.html"
                       >Inicio</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Entrega-N3/pages/catalogo.html"
-                      >Catalogo</a
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="como-comprar.html"
+                      >Cómo Comprar</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="/Entrega-N3/pages/como-comprar.html"
-                      >Como Comprar</a
-                    >
+                    <a class="nav-link" href="registrate.html">Registrate</a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="/Entrega-N3/pages/registrate.html"
-                      >Registrate</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="/Entrega-N3/pages/contacto.html"
-                      >Contacto</a
-                    >
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -117,42 +95,44 @@
       </h2>
 
       <!--Formulario para registro de datos-->
-      <form action="/submit" method="post"></form>
-      <div class="list-style">
-        <label for="nombre">Nombre y Apeliido</label>
-        <input type="text" name="nombre" id="nombre" />
-      </div>
-      <div class="list-style">
-        <label for="mail">Correo electronico</label>
-        <input type="text" name="mail" id="mail" />
-      </div>
-      <div class="list-style">
-        <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" />
-      </div>
-      <div class="list-style">
-        <label for="genero">Genero</label>
-        <select name="" id="">
-          <option value="">Seleccione genero--</option>
-          <option value="">Mujer</option>
-          <option value="">Hombre</option>
-          <option value="">Binario</option>
-        </select>
-      </div>
-      <div class="list-style">
-        <label for="pais">Pais</label>
-        <select name="" id="">
-          <option value="">Seleccione pais--</option>
-          <option value="">Argentina</option>
-          <option value="">Chile</option>
-          <option value="">Peru</option>
-          <option value="">Paraguay</option>
-        </select>
-      </div>
-      <div class="list-style">
-        <input type="submit" value="Enviar" style="background: #b03052" />
-      </div>
+      <form action="/submit" method="post">
+        <div class="list-style">
+          <label for="nombre">Nombre y Apellido</label>
+          <input type="text" name="nombre" id="nombre" />
+        </div>
+        <div class="list-style">
+          <label for="mail">Correo electrónico</label>
+          <input type="text" name="mail" id="mail" />
+        </div>
+        <div class="list-style">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="list-style">
+          <label for="genero">Género</label>
+          <select name="genero" id="genero">
+            <option value="">Seleccione género--</option>
+            <option value="mujer">Mujer</option>
+            <option value="hombre">Hombre</option>
+            <option value="binario">Binario</option>
+          </select>
+        </div>
+        <div class="list-style">
+          <label for="pais">País</label>
+          <select name="pais" id="pais">
+            <option value="">Seleccione país--</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="peru">Perú</option>
+            <option value="paraguay">Paraguay</option>
+          </select>
+        </div>
+        <div class="list-style">
+          <input type="submit" value="Enviar" style="background: #b03052" />
+        </div>
+      </form>
     </main>
+
     <!--Pie de pagina-->
     <footer>
       <section
@@ -160,7 +140,7 @@
         data-aos="fade-up"
       >
         <img
-          src="/Entrega-N3/assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
+          src="../assets/img/E75E08F2-DECD-4E64-B25A-1A742DB569E4.PNG"
           alt="Logo"
           class="footer-logo"
           data-aos="flip-up"
