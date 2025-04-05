@@ -52,7 +52,7 @@ body {
   margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   background-color: #F37199;
   padding: 5px;
   border-radius: 5px;
@@ -61,9 +61,10 @@ body {
 .figure1 .figure-caption:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.figure1 img-thumbnail {
+.figure1 .img-thumbnail {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
   transition: transform 0.3s ease-in-out;
   background-color: #EC7FA9;
 }
