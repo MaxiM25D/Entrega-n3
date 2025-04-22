@@ -1,15 +1,129 @@
 @use'../generales/variables'as*;
+@use'../utilidades/extends'as*;
 
  /* ---- Media Queries ---- */
+
+/* Media Query para pantallas pequeñas (menos de 480px) */
+   @media (max-width: 480px) {
+    
+    body {
+      background: $bg-1;
+    }
+    .navbar-brand {
+        font-size: 30px; // Reducimos tamaño del logo/marca
+        justify-content: flex-start;
+    }
+  
+    /* Estilos de subtítulos y otras secciones */
+    .subtitulo-idx, .subtitulo-cat, .subtitulo-cc, .subtitulo-r, .subtitulo-ctc {
+      font-size: 16px;
+      flex-direction: column;
+      padding: 8px;
+  }
+  
+    /*grilla de imágenes */
+    .figure1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .img-thumbnail {
+        height: auto;
+      } 
+    .figure-caption {
+        font-size: 14px;
+    }
+
+    /*para seccion de como comprar*/
+    .lista1 .list-group-item {
+      font-size: 18px; 
+      padding-left: 15px;
+    }
+    /*para seccion de contacto*/
+    .links1 {
+      font-size: 16px; 
+      padding: 10px;
+    }
+    /*para seccion de Registro*/
+    .list-style {
+      font-size: 16px; // Reducir tamaño de fuente en móviles
+      padding: 10px; // Ajustar padding para pantallas pequeñas
+    }
+    .list-style input,
+    .list-style select {
+      padding: 8px; // Reducir padding para móviles
+    }
+
+/*FOOTER */
+    .piedepagina {
+    padding: 20px;
+    font-size: 14px;
+
+    .footer-logo {
+      max-width: 80px;
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+  /* Media Query para pantallas medianas (481px a 1023px) */
+  @media (min-width: 481px) and (max-width: 1023px) {
+    
+    body {
+      background: $bg-1;
+    }
+    .navbar-brand {
+        font-size: 40px;
+    }
+  
+    /* Ajustes para imágenes y subtítulos */
+    .figure1 {
+        width: 45%;
+        margin: 10px 0;
+    }
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .subtitulo-idx, .subtitulo-cat, .subtitulo-cc, .subtitulo-r, .subtitulo-ctc {
+        font-size: 18px;
+        flex-direction: column;
+        padding: 10px;
+    }
+/*para seccion de como comprar*/
+    .lista1 .list-group-item {
+        font-size: 18px; 
+        padding: 12px; 
+      }
+/*para seccion de contacto*/
+      .links1 {
+        font-size: 18px; 
+        padding: 12px; 
+      }
+      /*para seccion de registro*/
+      .list-style {
+        font-size: 18px; // Mantener tamaño de fuente en tabletas
+        padding: 12px; // Ajustar padding para tabletas
+      }
+      .list-style input,
+      .list-style select {
+        padding: 10px; // Ajustar padding para facilitar la interacción en tabletas
+      }
+    /*FOOTER */
+    .piedepagina {
+        padding: 24px;
+        font-size: 16px;
+    
+        .footer-logo {
+          max-width: 90px;
+        }
+      }
+  }  
+  
   /* Media Query para pantallas grandes (1024px o más) */
   @media (min-width: 1024px) {
     body {
         background: $bg-1;
-    }
-  
-    /* Navbar y otros elementos */
-    .navbar-brand {
-        font-size: 50px;
     }
     .figure-caption {
         font-size: 16px;
@@ -22,57 +136,17 @@
         display: inline-block;
         vertical-align: top;
     }
-  }
-  
-  /* Media Query para pantallas medianas (768px a 1023px) */
-  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Para seccion de registro*/
+    .list-style {
+      font-size: 20px; // Aumentar tamaño de fuente en pantallas grandes
+      padding: 15px; // Más espacio alrededor
+    }
+    .list-style input,
+    .list-style select {
+      padding: 12px; // Aumentar padding para mejor visibilidad en pantallas grandes
+    }
     
-    body {
-      background: $bg-1;
-    }
-  
-    /* Ajustes para imágenes y subtítulos */
-    .figure1 {
-        width: 45%;
-        margin: 10px 0;
-    }
-    .subtitulo-idx, .subtitulo-cat, .subtitulo-cc, .subtitulo-r, .subtitulo-ctc {
-        font-size: 24px;
-    }
-  
-    /* Ajustar navbar y otros textos */
-    .navbar-brand {
-        font-size: 40px;
-    }
   }
   
-  /* Media Query para pantallas pequeñas (menos de 768px) */
-  @media (max-width: 767px) {
-    
-    body {
-      background: $bg-1;
-    }
-  
-    /* Estilos de subtítulos y otras secciones */
-    .subtitulo-idx, .subtitulo-cat, .subtitulo-cc, .subtitulo-r, .subtitulo-ctc {
-        font-size: 22px;
-        flex-direction: column;
-        padding: 8px;
-    }
-  
-    /*grilla de imágenes */
-    .figure1 {
-        width: 100%;
-        margin: 10px 0;
-    }
-  
-    /* Ajustar los tamaños de fuentes para mejorar en pantallas pequeñas */
-    .navbar-brand {
-        font-size: 30px;
-    }
-  
-    .figure-caption {
-        font-size: 14px;
-    }
-  }
+
   
