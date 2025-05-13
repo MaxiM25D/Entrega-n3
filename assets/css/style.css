@@ -39,13 +39,27 @@ body {
   color: rgb(255, 255, 255);
 }
 
+/* Estilos para el contenedor de las figuras */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
 /* Estilos para imagenes */
 .figure1 {
+  flex: 1 1 300px;
+  max-width: 100%;
+  min-width: 200px;
+  text-align: center;
   position: relative;
-}
-.figure1:hover {
-  transform: scale(1.1);
-  background-color: transparent;
+  transition: transform 0.3s ease;
+  /* &:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+  } */
 }
 .figure1 .figure-caption {
   text-align: center;
@@ -65,8 +79,9 @@ body {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
   background-color: #EC7FA9;
+  border-radius: 10px;
 }
 
 /* Estilos para subtítulos en diversas secciones */
