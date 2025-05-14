@@ -56,10 +56,10 @@ body {
   text-align: center;
   position: relative;
   transition: transform 0.3s ease;
-  /* &:hover {
-    transform: scale(1.05);
-    background-color: transparent;
-  } */
+}
+.figure1:hover {
+  transform: scale(1.05);
+  background-color: transparent;
 }
 .figure1 .figure-caption {
   text-align: center;
